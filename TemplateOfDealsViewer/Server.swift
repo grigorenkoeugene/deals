@@ -20,17 +20,21 @@ final class Server {
   ]
   
   func subscribeToDeals(callback: @escaping ([Deal]) -> Void) {
+    let currentTimeStamp = Date().timeIntervalSince1970
+    let timeStampRandomizer = Double.random(in: 50_000...50_000_000)
+    let randomDate = Date(timeIntervalSince1970: Double.random(in: currentTimeStamp - timeStampRandomizer...currentTimeStamp))
+    
+    
     queue.async {
       var deals: [Deal] = []
       let dealsCount = Int64.random(in: 1_000_000..<1_001_000)
       let dealsCountInPacket = 100
       var j = 0
       for i in 0...dealsCount {
-        let currentTimeStamp = Date().timeIntervalSince1970
-        let timeStampRandomizer = Double.random(in: 50_000...50_000_000)
+        
         let deal = Deal(
           id: i,
-          dateModifier: Date(timeIntervalSince1970: Double.random(in: currentTimeStamp - timeStampRandomizer...currentTimeStamp)),
+          dateModifier: randomDate.addingTimeInterval(TimeInterval(i)),
           instrumentName: self.instrumentNames.shuffled().first!,
           price: Double.random(in: 60...70),
           amount: Double.random(in: 1_000_000...50_000_000),
