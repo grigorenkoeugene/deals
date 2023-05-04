@@ -31,7 +31,7 @@ final class Server {
       let dealsCountInPacket = 100
       var j = 0
       for i in 0...dealsCount {
-        
+
         let deal = Deal(
           id: i,
           dateModifier: randomDate.addingTimeInterval(TimeInterval(i)),
@@ -56,11 +56,10 @@ final class Server {
         }
       }
     }
-    
   }
 }
 
-struct Deal {
+struct Deal: Comparable {
   let id: Int64
   let dateModifier: Date
   let instrumentName: String
@@ -68,7 +67,16 @@ struct Deal {
   let amount: Double
   let side: Side
   
-  enum Side: CaseIterable {
-    case sell, buy
+  enum Side: String, CaseIterable, Comparable {
+    case sell
+    case buy
+
+    static func < (lhs: Deal.Side, rhs: Deal.Side) -> Bool {
+        return lhs.rawValue < rhs.rawValue
+    }
+  }
+
+  static func < (lhs: Deal, rhs: Deal) -> Bool {
+    return lhs.side < rhs.side
   }
 }

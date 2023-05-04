@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		151E70572940D970000F9ED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E70562940D970000F9ED0 /* AppDelegate.swift */; };
 		151E70592940D970000F9ED0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E70582940D970000F9ED0 /* SceneDelegate.swift */; };
-		151E705B2940D970000F9ED0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E705A2940D970000F9ED0 /* ViewController.swift */; };
+		151E705B2940D970000F9ED0 /* DealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E705A2940D970000F9ED0 /* DealsViewController.swift */; };
 		151E705E2940D970000F9ED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151E705C2940D970000F9ED0 /* Main.storyboard */; };
 		151E70602940D971000F9ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151E705F2940D971000F9ED0 /* Assets.xcassets */; };
 		151E70632940D971000F9ED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151E70612940D971000F9ED0 /* LaunchScreen.storyboard */; };
@@ -18,13 +18,19 @@
 		151E706F2941FC75000F9ED0 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151E706E2941FC75000F9ED0 /* DealCell.swift */; };
 		155E2E082942CF470094E5DA /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 155E2E062942CF470094E5DA /* HeaderCell.xib */; };
 		155E2E092942CF470094E5DA /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E2E072942CF470094E5DA /* HeaderCell.swift */; };
+		8427D6FD2A03B167000E7CB7 /* DealsTableViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427D6FC2A03B167000E7CB7 /* DealsTableViewDataSourceType.swift */; };
+		8477411E2A028BEB001D94B5 /* DealsTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477411D2A028BEB001D94B5 /* DealsTableViewViewModel.swift */; };
+		847741202A02C13E001D94B5 /* DealsTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477411F2A02C13E001D94B5 /* DealsTableViewCellViewModel.swift */; };
+		847741232A02C416001D94B5 /* DealsTableViewCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847741222A02C416001D94B5 /* DealsTableViewCellViewModelType.swift */; };
+		84E492892A03FEE100F4B1E3 /* DealsSortTableViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E492882A03FEE100F4B1E3 /* DealsSortTableViewModelType.swift */; };
+		84E4928B2A03FF7700F4B1E3 /* DealsTableViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4928A2A03FF7700F4B1E3 /* DealsTableViewType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		151E70532940D970000F9ED0 /* TemplateOfDealsViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateOfDealsViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151E70562940D970000F9ED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		151E70582940D970000F9ED0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		151E705A2940D970000F9ED0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		151E705A2940D970000F9ED0 /* DealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsViewController.swift; sourceTree = "<group>"; };
 		151E705D2940D970000F9ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		151E705F2940D971000F9ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		151E70622940D971000F9ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +40,12 @@
 		151E706E2941FC75000F9ED0 /* DealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
 		155E2E062942CF470094E5DA /* HeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		155E2E072942CF470094E5DA /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		8427D6FC2A03B167000E7CB7 /* DealsTableViewDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsTableViewDataSourceType.swift; sourceTree = "<group>"; };
+		8477411D2A028BEB001D94B5 /* DealsTableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsTableViewViewModel.swift; sourceTree = "<group>"; };
+		8477411F2A02C13E001D94B5 /* DealsTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		847741222A02C416001D94B5 /* DealsTableViewCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsTableViewCellViewModelType.swift; sourceTree = "<group>"; };
+		84E492882A03FEE100F4B1E3 /* DealsSortTableViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsSortTableViewModelType.swift; sourceTree = "<group>"; };
+		84E4928A2A03FF7700F4B1E3 /* DealsTableViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsTableViewType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +78,74 @@
 		151E70552940D970000F9ED0 /* TemplateOfDealsViewer */ = {
 			isa = PBXGroup;
 			children = (
+				847741192A0287FB001D94B5 /* Model */,
+				847741182A0287E5001D94B5 /* View */,
+				8477411B2A028836001D94B5 /* ViewModel */,
+				8477411A2A028814001D94B5 /* Network  */,
+				847741212A02C3E8001D94B5 /* Protocol */,
 				151E70562940D970000F9ED0 /* AppDelegate.swift */,
 				151E70582940D970000F9ED0 /* SceneDelegate.swift */,
-				151E705A2940D970000F9ED0 /* ViewController.swift */,
 				151E705C2940D970000F9ED0 /* Main.storyboard */,
 				151E705F2940D971000F9ED0 /* Assets.xcassets */,
 				151E70612940D971000F9ED0 /* LaunchScreen.storyboard */,
 				151E70642940D971000F9ED0 /* Info.plist */,
+			);
+			path = TemplateOfDealsViewer;
+			sourceTree = "<group>";
+		};
+		847741182A0287E5001D94B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8477411C2A02886F001D94B5 /* Cell */,
+				151E705A2940D970000F9ED0 /* DealsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		847741192A0287FB001D94B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8477411A2A028814001D94B5 /* Network  */ = {
+			isa = PBXGroup;
+			children = (
 				151E706A2940D98C000F9ED0 /* Server.swift */,
+			);
+			path = "Network ";
+			sourceTree = "<group>";
+		};
+		8477411B2A028836001D94B5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8477411D2A028BEB001D94B5 /* DealsTableViewViewModel.swift */,
+				8477411F2A02C13E001D94B5 /* DealsTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8477411C2A02886F001D94B5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
 				151E706C2941F990000F9ED0 /* DealCell.xib */,
 				151E706E2941FC75000F9ED0 /* DealCell.swift */,
 				155E2E072942CF470094E5DA /* HeaderCell.swift */,
 				155E2E062942CF470094E5DA /* HeaderCell.xib */,
 			);
-			path = TemplateOfDealsViewer;
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		847741212A02C3E8001D94B5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				847741222A02C416001D94B5 /* DealsTableViewCellViewModelType.swift */,
+				8427D6FC2A03B167000E7CB7 /* DealsTableViewDataSourceType.swift */,
+				84E492882A03FEE100F4B1E3 /* DealsSortTableViewModelType.swift */,
+				84E4928A2A03FF7700F4B1E3 /* DealsTableViewType.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,10 +222,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				151E706F2941FC75000F9ED0 /* DealCell.swift in Sources */,
-				151E705B2940D970000F9ED0 /* ViewController.swift in Sources */,
+				151E705B2940D970000F9ED0 /* DealsViewController.swift in Sources */,
+				8477411E2A028BEB001D94B5 /* DealsTableViewViewModel.swift in Sources */,
+				8427D6FD2A03B167000E7CB7 /* DealsTableViewDataSourceType.swift in Sources */,
+				84E4928B2A03FF7700F4B1E3 /* DealsTableViewType.swift in Sources */,
 				155E2E092942CF470094E5DA /* HeaderCell.swift in Sources */,
 				151E70572940D970000F9ED0 /* AppDelegate.swift in Sources */,
 				151E706B2940D98C000F9ED0 /* Server.swift in Sources */,
+				847741202A02C13E001D94B5 /* DealsTableViewCellViewModel.swift in Sources */,
+				84E492892A03FEE100F4B1E3 /* DealsSortTableViewModelType.swift in Sources */,
+				847741232A02C416001D94B5 /* DealsTableViewCellViewModelType.swift in Sources */,
 				151E70592940D970000F9ED0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -290,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -307,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9K9C6RY6JG;
+				DEVELOPMENT_TEAM = 3YJZP32W35;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TemplateOfDealsViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -335,7 +407,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9K9C6RY6JG;
+				DEVELOPMENT_TEAM = 3YJZP32W35;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TemplateOfDealsViewer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
