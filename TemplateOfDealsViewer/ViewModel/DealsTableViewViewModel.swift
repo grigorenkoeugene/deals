@@ -10,18 +10,32 @@ enum SortType {
 }
 
 class DealsTableViewViewModel: DealsTableViewType {
-
+    
     var sortType: SortType = .byTime
     var sortAscending = true
-    
+    var sortingThreshold = 1000
+    var hasNewData = false
+
     private var deal: [Deal] = []
+    private var dealCount = 0
+    private var dealBuffer: [Deal] = []
 
     func getDeals(completion: @escaping (Error?) -> Void) {
-        Server().subscribeToDeals { [weak self] deals in
-            guard let self = self else { return }
-            self.deal.append(contentsOf: deals)
-            self.sortDeals()
-            completion(nil)
+        DispatchQueue.global(qos: .userInitiated).async {
+            Server().subscribeToDeals { [weak self] deals in
+                guard let self = self else { return }
+                self.dealBuffer.append(contentsOf: deals)
+                self.dealCount += deals.count
+
+                if self.dealCount >= self.sortingThreshold {
+                    self.hasNewData = true
+                    self.deal.append(contentsOf: self.dealBuffer)
+                    self.sortDeals()
+                    self.dealBuffer = []
+                    self.dealCount = 0
+                }
+                completion(nil)
+            }
         }
     }
     

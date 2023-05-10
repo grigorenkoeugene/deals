@@ -132,5 +132,241 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A8ED35C-FE68-4D1D-B283-05E979DCC29F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TemplateOfDealsViewer/View/Cell/HeaderCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "configure()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "932E0F83-84F8-4B1D-AFDF-BBBDE391AE5F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TemplateOfDealsViewer/View/Cell/HeaderCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "configure()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "719105A0-775E-47E3-B191-C53AD41CEB83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TemplateOfDealsViewer/View/Cell/HeaderCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "viewModel"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "719105A0-775E-47E3-B191-C53AD41CEB83 - 73540fbc90729393"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TemplateOfDealsViewer.HeaderCell.viewModel.getter : Swift.Optional&lt;TemplateOfDealsViewer.HeaderCellViewModel&gt;"
+                  moduleName = "TemplateOfDealsViewer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/iOSTestProjects/mobileiosdevtestwork/TemplateOfDealsViewer/View/Cell/HeaderCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "719105A0-775E-47E3-B191-C53AD41CEB83 - 3da271471df24b87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TemplateOfDealsViewer.HeaderCell.viewModel.setter : Swift.Optional&lt;TemplateOfDealsViewer.HeaderCellViewModel&gt;"
+                  moduleName = "TemplateOfDealsViewer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/iOSTestProjects/mobileiosdevtestwork/TemplateOfDealsViewer/View/Cell/HeaderCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "121">
+               </Location>
+               <Location
+                  uuid = "719105A0-775E-47E3-B191-C53AD41CEB83 - d167ca91c2ff9196"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TemplateOfDealsViewer.HeaderCell.viewModel.modify : Swift.Optional&lt;TemplateOfDealsViewer.HeaderCellViewModel&gt;"
+                  moduleName = "TemplateOfDealsViewer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/iOSTestProjects/mobileiosdevtestwork/TemplateOfDealsViewer/View/Cell/HeaderCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "719105A0-775E-47E3-B191-C53AD41CEB83 - 8c77d47d1de35899"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TemplateOfDealsViewer.HeaderCell.viewModel.modify : Swift.Optional&lt;TemplateOfDealsViewer.HeaderCellViewModel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "TemplateOfDealsViewer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/iOSTestProjects/mobileiosdevtestwork/TemplateOfDealsViewer/View/Cell/HeaderCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "719105A0-775E-47E3-B191-C53AD41CEB83 - b74b2d78ee80c51f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TemplateOfDealsViewer.HeaderCell.init(reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; TemplateOfDealsViewer.HeaderCell"
+                  moduleName = "TemplateOfDealsViewer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/iOSTestProjects/mobileiosdevtestwork/TemplateOfDealsViewer/View/Cell/HeaderCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "301">
+               </Location>
+               <Location
+                  uuid = "719105A0-775E-47E3-B191-C53AD41CEB83 - 854676a26ada656"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TemplateOfDealsViewer.HeaderCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TemplateOfDealsViewer.HeaderCell&gt;"
+                  moduleName = "TemplateOfDealsViewer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/iOSTestProjects/mobileiosdevtestwork/TemplateOfDealsViewer/View/Cell/HeaderCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "286">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32B1C94C-6CF5-4A64-A838-4F7B6FB94FD7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TemplateOfDealsViewer/View/DealsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "32B1C94C-6CF5-4A64-A838-4F7B6FB94FD7 - 8fa6ed0c0a5018e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TemplateOfDealsViewer.DealsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TemplateOfDealsViewer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/iOSTestProjects/mobileiosdevtestwork/TemplateOfDealsViewer/View/DealsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "487">
+               </Location>
+               <Location
+                  uuid = "32B1C94C-6CF5-4A64-A838-4F7B6FB94FD7 - 825befda8d22d2e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TemplateOfDealsViewer.DealsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TemplateOfDealsViewer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Documents/iOSTestProjects/mobileiosdevtestwork/TemplateOfDealsViewer/View/DealsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "186">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD3306B2-5DBC-4FD9-A42F-85481C0D913B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TemplateOfDealsViewer/View/DealsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3599F7AE-DC86-4582-B83C-BE1A6D35E152"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TemplateOfDealsViewer/View/DealsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DAF5703-39AD-47F6-8C64-DB349E6EC42C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TemplateOfDealsViewer/View/DealsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

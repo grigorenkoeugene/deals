@@ -1,6 +1,7 @@
 import UIKit
 
 class DealsViewController: UIViewController {
+    private var headerViewModel = HeaderCellViewModel(sortType: .back, sortAscending: true)
 
     private enum Icon: String {
         case arrow = "arrow.up.arrow.down"
@@ -8,10 +9,9 @@ class DealsViewController: UIViewController {
     }
     
     // MARK: - Properties
-
+    
+    private let activityIndicator = UIActivityIndicatorView(style: .medium)
     private var viewModel: DealsTableViewType?
-    private let server = Server()
-    private var model: [Deal] = []
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,16 +21,32 @@ class DealsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = DealsTableViewViewModel()
+        view.addSubview(activityIndicator)
         setupTableView()
         navigationController()
+        setupIndicator()
         viewModel?.sortType = .byTime
         viewModel?.sortDeals()
-        self.viewModel?.getDeals{ [weak self] _ in
-            self?.tableView.reloadData()
+        self.activityIndicator.startAnimating()
+        self.viewModel?.getDeals { _ in
+            DispatchQueue.main.async { [weak self] in
+                if self?.viewModel?.hasNewData == true {
+                    self?.activityIndicator.stopAnimating()
+                    self?.tableView.reloadData()
+                    self?.viewModel?.hasNewData = false
+                }
+            }
         }
     }
     
     // MARK: - Setup
+    
+    private func setupIndicator() {
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+           activityIndicator.hidesWhenStopped = true
+           activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+           activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
     
     private func setupTableView() {
         tableView.register(UINib(nibName: DealCell.reuseIidentifier, bundle: nil), forCellReuseIdentifier: DealCell.reuseIidentifier)
@@ -67,6 +83,7 @@ class DealsViewController: UIViewController {
             let alertAction = UIAlertAction(title: action.title, style: action.style) { _ in
                 self.viewModel?.sortType = action.sortType
                 self.viewModel?.sortDeals()
+                //self.headerViewModel.view = self.viewModel
                 self.tableView.reloadData()
             }
             alertController.addAction(alertAction)
@@ -99,7 +116,7 @@ extension DealsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderCell.reuseIidentifier) as! HeaderCell
-        
+        cell.updateLabels(with: viewModel!)        
         return cell
     }
 }
