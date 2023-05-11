@@ -10,7 +10,7 @@ enum SortType {
 }
 
 class DealsTableViewViewModel: DealsTableViewType {
-    
+
     var sortType: SortType = .byTime
     var sortAscending = true
     var sortingThreshold = 1000
@@ -19,6 +19,10 @@ class DealsTableViewViewModel: DealsTableViewType {
     private var deal: [Deal] = []
     private var dealCount = 0
     private var dealBuffer: [Deal] = []
+    
+    var headerCellViewModel: HeaderCellViewModel {
+        return HeaderCellViewModel(sortType: sortType, sortAscending: sortAscending)
+    }
 
     func getDeals(completion: @escaping (Error?) -> Void) {
         DispatchQueue.global(qos: .userInitiated).async {

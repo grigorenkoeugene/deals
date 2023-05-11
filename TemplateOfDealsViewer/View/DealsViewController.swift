@@ -1,7 +1,6 @@
 import UIKit
 
 class DealsViewController: UIViewController {
-    private var headerViewModel = HeaderCellViewModel(sortType: .back, sortAscending: true)
 
     private enum Icon: String {
         case arrow = "arrow.up.arrow.down"
@@ -12,7 +11,7 @@ class DealsViewController: UIViewController {
     
     private let activityIndicator = UIActivityIndicatorView(style: .medium)
     private var viewModel: DealsTableViewType?
-    
+    var headerViewModel = HeaderCellViewModel(sortType: .byTime, sortAscending: false)
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -25,6 +24,8 @@ class DealsViewController: UIViewController {
         setupTableView()
         navigationController()
         setupIndicator()
+        headerViewModel.sortType = .byTime
+        headerViewModel.sortAscending = false
         viewModel?.sortType = .byTime
         viewModel?.sortDeals()
         self.activityIndicator.startAnimating()
@@ -82,9 +83,7 @@ class DealsViewController: UIViewController {
         for action in actions {
             let alertAction = UIAlertAction(title: action.title, style: action.style) { _ in
                 self.viewModel?.sortType = action.sortType
-                self.viewModel?.sortDeals()
-                //self.headerViewModel.view = self.viewModel
-                self.tableView.reloadData()
+                self.updateHeaderViewModel()
             }
             alertController.addAction(alertAction)
         }
@@ -93,8 +92,15 @@ class DealsViewController: UIViewController {
     
     @objc func ascendingAction() {
         viewModel?.sortAscending.toggle()
-        viewModel?.sortDeals()
-        tableView.reloadData()
+        updateHeaderViewModel()
+    }
+    
+    private func updateHeaderViewModel() {
+        self.viewModel?.sortDeals()
+        let newHeaderViewModel = HeaderCellViewModel(sortType: self.viewModel?.sortType ?? .byTime,
+                                                     sortAscending: self.viewModel?.sortAscending ?? true)
+        self.headerViewModel = newHeaderViewModel
+        self.tableView.reloadData()
     }
 }
 
@@ -115,8 +121,9 @@ extension DealsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderCell.reuseIidentifier) as! HeaderCell
-        cell.updateLabels(with: viewModel!)        
+        let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderCell.reuseIidentifier) as? HeaderCell
+        guard let cell = cell else { return UITableViewCell() }
+        cell.configure(with: headerViewModel)
         return cell
     }
 }

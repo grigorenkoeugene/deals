@@ -8,15 +8,14 @@
 import Foundation
 
 class HeaderCellViewModel {
+    var sortType: SortType
+    var sortAscending: Bool
 
-    let sortType: SortType
-    let sortAscending: Bool
-    
     init(sortType: SortType, sortAscending: Bool) {
         self.sortType = sortType
         self.sortAscending = sortAscending
     }
-    
+
     var instrumentNameText: String {
         switch sortType {
         case .byInstrumentName:
@@ -25,7 +24,7 @@ class HeaderCellViewModel {
             return "Instrument"
         }
     }
-    
+
     var priceText: String {
         switch sortType {
         case .byPrice:
@@ -34,7 +33,7 @@ class HeaderCellViewModel {
             return "Price"
         }
     }
-    
+
     var amountText: String {
         switch sortType {
         case .byAmountCount:
@@ -43,7 +42,7 @@ class HeaderCellViewModel {
             return "Amount"
         }
     }
-    
+
     var sideText: String {
         switch sortType {
         case .bySide:

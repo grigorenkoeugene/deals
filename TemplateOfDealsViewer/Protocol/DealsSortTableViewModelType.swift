@@ -6,4 +6,5 @@ protocol DealsSortTableViewModelType {
     func sortDeals()
     func getDeals(completion: @escaping (Error?) -> Void)
     var hasNewData: Bool { get set }
+    var headerCellViewModel: HeaderCellViewModel { get }
 }
