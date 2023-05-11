@@ -29,12 +29,13 @@ class DealsViewController: UIViewController {
         viewModel?.sortType = .byTime
         viewModel?.sortDeals()
         self.activityIndicator.startAnimating()
-        self.viewModel?.getDeals { _ in
-            DispatchQueue.main.async { [weak self] in
-                if self?.viewModel?.hasNewData == true {
-                    self?.activityIndicator.stopAnimating()
-                    self?.tableView.reloadData()
-                    self?.viewModel?.hasNewData = false
+        self.viewModel?.getDeals { [weak self] _ in
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                if self.viewModel?.hasNewData == true {
+                    self.activityIndicator.stopAnimating()
+                    self.tableView.reloadData()
+                    self.viewModel?.hasNewData = false
                 }
             }
         }
